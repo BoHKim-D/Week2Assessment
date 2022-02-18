@@ -123,6 +123,22 @@ let foodArr = [
     rating: 5,
     tags: ['vegan', 'keto', 'fruit']
 },
+{
+    name:'pizza stick',
+    price: 7,
+    category: 'appetizer',
+    popularity: 7,
+    rating: 8,
+    tags: ['stick', 'pepperoni', 'cheese']
+},
+{
+    name:'coffee',
+    price: 1,
+    category: 'drink',
+    popularity: 7,
+    rating: 6,
+    tags: ['drink', 'caffeine', 'energy']
+}
 ]
 
 
@@ -188,6 +204,20 @@ console.log(filteredFood);
 
 //CODE HERE
 
+const filterByProperty = (property, number, type) => {
+    let filArr = foodArr.filter((element) =>{
+        if(type === 'above'){
+            if(element[property] > number){
+                return true;
+            } 
+        } else if(type === 'below') {
+            if(element[property] > number){
+                return false;
+            }
+        }
+    })
+    return filArr;
+}
 
 // const filterByProperty = (property, number, type) => {
 //     let filArr = [];
@@ -203,3 +233,4 @@ console.log(filteredFood);
 */
 
 //CODE HERE
+console.log(filterByProperty('rating', 5, 'above'))
