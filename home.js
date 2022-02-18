@@ -58,7 +58,20 @@ const canWeDeliver = (zipCode) => {
     } return 'Sorry, we can not deliver to that address'
 }
 
+// const canWeDeliver = (zipcode) => {
+//     let inZone = false;
 
+//     deliveryAreaZipCodes.forEach(element => {
+//         if(zipcode === element){
+//             inZone = true;
+//         }
+//     })
+//     if(inZone){
+//         return 'You are in our delivery zone!';
+//     } else {
+//         return 'Sorry we can not deliver to that address'
+//     }
+// }
 
 /* 
     Problem 2 Continued
@@ -85,7 +98,6 @@ const canWeDeliverTwo = (zipCode) => {
         return 'Sorry, We can not deliver to your address.'
     }
 }
-
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
