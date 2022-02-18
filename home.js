@@ -139,4 +139,5 @@ console.log(newTitle);
 */
 
 //CODE HERE
-let newDesc = deals[1].desc.replace.trim('March', 'April')
+let newDesc = deals[1].desc.replace('March', 'April')
+console.log(newDesc.trim());
