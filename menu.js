@@ -70,9 +70,9 @@ console.log(pizza.tags[1]);
 */
 
 //CODE HERE
-let {price: newPrice} = pizza;
+let {price} = pizza;
 
-console.log(newPrice);
+console.log(price);
 
 /*
     Fourth, and last, destructure the category
@@ -122,7 +122,7 @@ let foodArr = [
     popularity: 1,
     rating: 5,
     tags: ['vegan', 'keto', 'fruit']
-}
+},
 ]
 
 
@@ -142,7 +142,7 @@ let foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(ratings => ratings.rating > 5)
+const filteredFood = foodArr.filter(item => item.tags.includes('vegan'))
 
 console.log(filteredFood);
 
@@ -187,12 +187,14 @@ console.log(filteredFood);
 */
 
 //CODE HERE
-const filterByProperty = (property, number, type) => {
-    let filArr = [];
-    let filterArr = foodArr.filter(type => type === above)
-}
 
-console.log(filterByProperty('rating', 4, 'above'));
+
+// const filterByProperty = (property, number, type) => {
+//     let filArr = [];
+//     let filterArr = foodArr.filter(type => type === above)
+// }
+
+// console.log(filterByProperty('rating', 4, 'above'));
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
